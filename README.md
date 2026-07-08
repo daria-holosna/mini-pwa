@@ -1,11 +1,13 @@
 # Mini PWA
 
-Минимальное PWA-приложение для GitHub Pages. Оно содержит:
+A minimal installable PWA hosted on GitHub Pages. It includes:
 
 - `manifest.webmanifest`
 - `service-worker.js`
-- PNG-иконки 192 и 512 px
-- простой интерфейс со счетчиком и локальной заметкой
+- 192 px and 512 px PNG icons
+- a small counter
+- a note field with an explicit save button
+- a saved-note preview that proves the note was stored on the device
 
 ## Local preview
 
@@ -13,7 +15,7 @@
 python3 -m http.server 5173
 ```
 
-Открой:
+Open:
 
 ```text
 http://localhost:5173
@@ -21,9 +23,16 @@ http://localhost:5173
 
 ## iPhone install
 
-1. Открой публичный GitHub Pages URL в Safari на iPhone.
-2. Нажми кнопку Share.
-3. Выбери Add to Home Screen.
-4. Нажми Add.
+1. Open the GitHub Pages URL in Safari on your iPhone.
+2. Tap the Share button.
+3. Choose Add to Home Screen.
+4. Tap Add.
 
-После этого приложение появится на главном экране iPhone.
+The app will appear on your iPhone home screen.
+
+## How to test local saving
+
+1. Type a note into the Note field.
+2. Tap Save note.
+3. Check the Saved note section below the field.
+4. Close and reopen the app. The saved note should still be visible.

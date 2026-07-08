@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -18,26 +18,34 @@
       <section class="hero" aria-labelledby="app-title">
         <p class="eyebrow">PWA demo</p>
         <h1 id="app-title">Mini PWA</h1>
-        <p class="intro">Минимальное приложение, которое открывается с GitHub Pages, работает offline и ставится на главный экран iPhone.</p>
+        <p class="intro">A tiny installable app hosted on GitHub Pages. It works offline and keeps your note on this device.</p>
       </section>
 
       <section class="panel" aria-labelledby="counter-title">
         <div>
-          <p class="label" id="counter-title">Счетчик</p>
+          <p class="label" id="counter-title">Counter</p>
           <p class="counter-value" id="counterValue">0</p>
         </div>
         <button class="primary-button" type="button" id="counterButton">+1</button>
       </section>
 
       <section class="panel note-panel" aria-labelledby="note-title">
-        <label class="label" id="note-title" for="noteInput">Короткая заметка</label>
-        <textarea id="noteInput" rows="4" placeholder="Например: проверить установку на iPhone"></textarea>
-        <p class="hint">Заметка сохраняется в браузере на этом устройстве.</p>
+        <label class="label" id="note-title" for="noteInput">Note</label>
+        <textarea id="noteInput" rows="4" placeholder="Type something you want to save"></textarea>
+        <div class="note-actions">
+          <button class="secondary-button" type="button" id="saveNoteButton">Save note</button>
+          <button class="text-button" type="button" id="clearNoteButton">Clear</button>
+        </div>
+        <div class="saved-note" aria-live="polite">
+          <p class="label">Saved note</p>
+          <p id="savedNoteText" class="saved-note-text">Nothing saved yet.</p>
+          <p id="savedNoteMeta" class="hint">Save a note to see it here.</p>
+        </div>
       </section>
 
       <footer class="status-bar">
         <span class="status-dot" aria-hidden="true"></span>
-        <span id="statusText">Готово к работе</span>
+        <span id="statusText">Ready</span>
       </footer>
     </main>
 

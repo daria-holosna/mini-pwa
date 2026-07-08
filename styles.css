@@ -106,6 +106,26 @@ h1 {
   transform: scale(0.97);
 }
 
+.secondary-button,
+.text-button {
+  min-height: 44px;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-weight: 750;
+}
+
+.secondary-button {
+  border: 0;
+  background: #0f766e;
+  color: #ffffff;
+}
+
+.text-button {
+  border: 1px solid rgba(23, 33, 29, 0.16);
+  background: #ffffff;
+  color: #33423c;
+}
+
 .note-panel {
   display: grid;
   align-items: stretch;
@@ -125,9 +145,36 @@ textarea {
 }
 
 textarea:focus,
-.primary-button:focus-visible {
+.primary-button:focus-visible,
+.secondary-button:focus-visible,
+.text-button:focus-visible {
   outline: 3px solid rgba(245, 158, 11, 0.45);
   outline-offset: 3px;
+}
+
+.note-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.saved-note {
+  margin-top: 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(15, 118, 110, 0.2);
+  background: rgba(15, 118, 110, 0.07);
+  padding: 12px;
+}
+
+.saved-note-text {
+  min-height: 28px;
+  margin: 6px 0 0;
+  color: #17211d;
+  font-size: 1rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
 }
 
 .hint {

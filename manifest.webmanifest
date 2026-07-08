@@ -1,7 +1,7 @@
 {
   "name": "Mini PWA",
   "short_name": "Mini PWA",
-  "description": "Минимальное PWA-приложение для установки на телефон.",
+  "description": "A minimal installable PWA for phone testing.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
